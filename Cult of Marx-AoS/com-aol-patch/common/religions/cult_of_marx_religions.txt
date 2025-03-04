@@ -1,0 +1,159 @@
+cultofmarx = {
+	has_coa_on_barony_only = yes
+	graphical_culture = muslimgfx
+	crusade_cb = crusade
+	playable = yes
+	hostile_within_group = yes
+	
+	ai_convert_same_group = 1
+	ai_convert_other_group = 2
+	
+	color = { 175 40 40 }
+	
+	interface_skin = { cult_of_marx_interface }
+	
+	# Names given only to Marxian characters (base names)
+	male_names = {
+		Karl Eugene Friederich Malcolm Fred Che
+	}
+	female_names = {
+		Rosa Elizabeth Annie Alexandra Ilhan Jones Laudelina
+	}
+
+	cult_of_marx = {
+		graphical_culture = muslimgfx
+		
+		interface_skin = { cult_of_marx_interface }
+		
+		icon = 118
+		heresy_icon = 118
+		color = { 175 40 40 }
+		
+		crusade_name = GREAT_PATRIOTIC_WAR
+		scripture_name = THE_MANIFESTO
+		priest_title = COMMISSAR
+		piety_name = LOYALTY
+		
+		high_god_name = GOD_THE_PARTY
+		
+		god_names = {
+			GOD_MARX GOD_ENGELS GOD_THE_REVOLUTION GOD_THE_DIALECTIC GOD_HISTORY
+		}
+		evil_god_names = {
+			THE_CAPITALIST THE_REACTIONARY THE_FASCIST THE_PRIEST
+		}
+		
+		can_demand_religious_conversion = yes
+		peace_piety_gain = 2.0
+		attacking_same_religion_piety_loss = yes
+		allow_looting = yes
+		priests_can_marry = yes
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes
+		hard_to_convert = yes
+		autocephaly = no
+
+		allow_in_ruler_designer = yes
+		
+		religious_clothing_head = 18
+		religious_clothing_priest = 18
+		
+
+		intermarry = anarchist
+		intermarry = cult_of_marx
+	}
+	
+	anarchist = {
+		graphical_culture = muslimgfx
+		
+		interface_skin = { cult_of_marx_interface }
+		
+		icon = 118
+		heresy_icon = 118
+		color = { 175 40 40 }
+		
+		crusade_name = GREAT_PATRIOTIC_WAR
+		scripture_name = THE_MANIFESTO
+		priest_title = COMMISSAR
+		piety_name = LOYALTY
+		
+		parent = cult_of_marx
+		
+		high_god_name = GOD_THE_PARTY
+		
+		god_names = {
+			GOD_MARX GOD_ENGELS GOD_THE_REVOLUTION GOD_THE_DIALECTIC GOD_HISTORY
+		}
+		evil_god_names = {
+			THE_CAPITALIST THE_REACTIONARY THE_FASCIST THE_PRIEST
+		}
+		
+		allow_viking_invasion = yes
+		allow_looting = yes
+		allow_rivermovement = yes
+		dislike_tribal_organization = yes
+		priests_can_marry = yes
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes
+		hard_to_convert = yes
+
+		allow_in_ruler_designer = yes
+		
+		religious_clothing_head = 18
+		religious_clothing_priest = 18
+		
+		intermarry = cult_of_marx
+		intermarry = liberation_theology
+	}
+	
+	liberation_theology = {
+		graphical_culture = muslimgfx
+		
+		interface_skin = { cult_of_marx_interface }
+		
+		icon = 118
+		heresy_icon = 118
+		color = { 175 40 40 }
+		
+		crusade_name = GREAT_PATRIOTIC_WAR
+		scripture_name = THE_MANIFESTO
+		priest_title = COMMISSAR
+		piety_name = LOYALTY
+		
+		parent = cult_of_marx
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_MARX GOD_ENGELS GOD_THE_REVOLUTION GOD_THE_DIALECTIC GOD_HISTORY
+		}
+		evil_god_names = {
+			THE_CAPITALIST THE_REACTIONARY THE_FASCIST
+		}
+		
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_demand_religious_conversion = yes
+		can_retire_to_monastery = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		
+		peace_piety_gain = 2.0
+		priests_can_inherit = yes
+		
+		female_temple_holders = yes
+		hard_to_convert = yes
+		autocephaly = yes
+
+		allow_in_ruler_designer = yes
+		
+		religious_clothing_head = 18
+		religious_clothing_priest = 18
+		
+		intermarry = cult_of_marx
+		intermarry = anarchist		
+	}
+}
